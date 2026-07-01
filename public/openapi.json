@@ -1,0 +1,183 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "x402 Weather API Hub",
+    "description": "21 paid weather API endpoints powered by x402 micropayments",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://x402-weather.vercel.app"
+    }
+  ],
+  "paths": {
+    "/api/metat": {
+      "get": {
+        "summary": "Meteostat - Historical weather data",
+        "description": "Access historical weather data from Meteostat",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/open-weather": {
+      "get": {
+        "summary": "Open Weather - Current & forecast weather",
+        "description": "Get current weather and forecasts",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/ski-resort": {
+      "get": {
+        "summary": "Ski Resort Conditions",
+        "description": "Get ski resort snow reports and conditions",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Ski resort data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/ai-weather": {
+      "get": {
+        "summary": "AI Weather by Meteosource",
+        "description": "AI-powered weather forecasts from Meteosource",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "AI weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/weather-api": {
+      "get": {
+        "summary": "Weather API",
+        "description": "General weather data service",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/weather338": {
+      "get": {
+        "summary": "Weather338",
+        "description": "Weather information service",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/weatherapi": {
+      "get": {
+        "summary": "WeatherAPI",
+        "description": "Real-time weather data from WeatherAPI",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/yahoo-weather": {
+      "get": {
+        "summary": "Yahoo Weather",
+        "description": "Yahoo weather forecasts",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/visual-crossing": {
+      "get": {
+        "summary": "Visual Crossing Weather",
+        "description": "Weather analytics and historical data",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/foreca": {
+      "get": {
+        "summary": "Foreca Weather",
+        "description": "Professional weather forecasts from Foreca",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather forecast" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/sea-temperature": {
+      "get": {
+        "summary": "Sea Surface Temperature",
+        "description": "Ocean and sea surface temperature data",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Temperature data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/easy-weather": {
+      "get": {
+        "summary": "Easy Weather",
+        "description": "Simple weather lookups",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/weather138": {
+      "get": {
+        "summary": "Weather API 138",
+        "description": "Weather data service",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/apjoy-forecast": {
+      "get": {
+        "summary": "Apjoy Weather Forecast",
+        "description": "Weather forecasts worldwide",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather forecast" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/open-weather-map": {
+      "get": {
+        "summary": "Open Weather Map",
+        "description": "Open-source weather data",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/datanest-weather": {
+      "get": {
+        "summary": "Weather API by Datanest",
+        "description": "Data-driven weather API",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/datanest-forecast": {
+      "get": {
+        "summary": "Weather Forecast by Datanest",
+        "description": "Data-driven weather forecasts",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather forecast" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/pickleball": {
+      "get": {
+        "summary": "Pickleball Playability",
+        "description": "Pickleball weather ratings and playability scores",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Playability data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/tidecheck": {
+      "get": {
+        "summary": "TideCheck",
+        "description": "Tide and ocean conditions data",
+        "x-402": { "amount": "0.100000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Tide data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/amazon-reviews": {
+      "get": {
+        "summary": "Amazon Full Reviews",
+        "description": "Amazon product reviews and ratings",
+        "x-402": { "amount": "0.125000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Review data" }, "402": { "description": "Payment required" } }
+      }
+    },
+    "/api/weather-db": {
+      "get": {
+        "summary": "Weather Database API",
+        "description": "Historical weather database queries",
+        "x-402": { "amount": "0.075000", "asset": "USDC", "network": "eip155:8453" },
+        "responses": { "200": { "description": "Weather data" }, "402": { "description": "Payment required" } }
+      }
+    }
+  }
+}
