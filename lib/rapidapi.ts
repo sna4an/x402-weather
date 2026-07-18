@@ -45,6 +45,36 @@ export function buildPaymentRequired(priceAtomic: string) {
           version: "2"
         }
       }
+    extensions: {
+      bazaar: {
+        info: {
+          input: {
+            type: "http",
+            method: "POST",
+            bodyType: "json",
+            body: {
+              type: "object",
+              properties: {
+                query: { type: "string", description: "Input parameter" }
+              }
+            }
+          },
+          output: {
+            type: "object",
+            properties: {
+              result: { type: "object", description: "API response data" }
+            },
+            example: { result: { data: "example response" } }
+          }
+        },
+        schema: {
+          type: "object",
+          properties: {
+            result: { type: "object", description: "API response data" }
+          }
+        }
+      }
+    }
     ]
   };
   return Buffer.from(JSON.stringify(paymentRequired)).toString("base64");
