@@ -45,6 +45,7 @@ export function buildPaymentRequired(priceAtomic: string) {
           version: "2"
         }
       }
+    ],
     extensions: {
       bazaar: {
         info: {
@@ -75,7 +76,6 @@ export function buildPaymentRequired(priceAtomic: string) {
         }
       }
     }
-    ]
   };
   return Buffer.from(JSON.stringify(paymentRequired)).toString("base64");
 }
